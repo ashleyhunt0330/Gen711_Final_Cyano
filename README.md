@@ -1,3 +1,2 @@
 # Gen711_Final_Cyano
-
-MacNeill Matthews - cyanobacteria
+MacNeill Matthews & Ashley Hunt- cyanobacteria

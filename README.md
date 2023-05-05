@@ -32,3 +32,5 @@ qiime taxa barplot --i-table /home/users/mm1853/trimmed_fastqs/feature_table.qza
 qiime taxa barplot --i-table feature_table.qza --m-metadata-file metadata.tsv --i-taxonomy taxonomy.qza --o-visualization my-barplot.qzv
 
 qiime feature-table filter-samples --i-table feature_table.qza --m-metadata-file metadata.tsv --o-filtered-table new_samples_table.qza
+
+<img width="1344" alt="Screen Shot 2023-05-05 at 4 04 32 PM" src="https://user-images.githubusercontent.com/130781520/236558559-de6146b3-78ae-4335-b3af-84a2f193280f.png">

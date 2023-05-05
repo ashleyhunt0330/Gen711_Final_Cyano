@@ -24,3 +24,5 @@ cp rep-seqs.qza /home/users/alh1081/trimmed_fastqs
 qiime metadata tabulate --m-input-file denoising-stats.qza --o-visualization denoising-stats.qzv
 
 qiime feature-table tabulate-seqs --i-data rep-seqs.qza --o-visualization rep-seqs.qzv
+
+qiime feature-classifier classify-sklearn --i-classifier /tmp/gen711_project_data/cyano/classifier_16S_V4-V5.qza --i-reads /home/users/alh1081/trimmed_fastqs/rep-seqs.qza --o-classification /home/users/alh1081/trimmed_fastqs/taxonomy.qza

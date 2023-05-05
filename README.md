@@ -35,7 +35,6 @@ qiime feature-table filter-samples --i-table feature_table.qza --m-metadata-file
 
 Bar Plot
 
-<img width="2048" alt="Screen Shot 2023-05-05 at 1 04 20 PM" src="https://user-images.githubusercontent.com/130762296/236558675-71ca3f0d-4af4-4dec-b228-e75e7e957ef6.png">
-
 <img width="1344" alt="Screen Shot 2023-05-05 at 4 04 32 PM" src="https://user-images.githubusercontent.com/130781520/236559222-8c010a3d-5d4e-4ca5-a265-58b8d8a60077.png">
 
+<img width="1068" alt="Screen Shot 2023-05-05 at 1 12 00 PM" src="https://user-images.githubusercontent.com/130762296/236559976-1e16b219-c2aa-45ba-83f1-dff894df57bf.png">

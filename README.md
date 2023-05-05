@@ -15,8 +15,8 @@ qiime cutadapt trim-paired --i-demultiplexed-sequences output_trimmed.qza --p-co
 
 qiime demux summarize --i-data output_trimmed2.qza --o-visualization output_trimmed3
 
-qiime dada2 denoise-paired --i-demultiplexed-seqs output_trimmed2.qza --p-trunc-len-f 0 --p-trunc-len-r 0 --p-trim-left-f 0 --p-trim-left-r 0 --p-n-threads 4 --o-denoising-stats denoising-stats.qza --o-table feature_table.qza --o-representative-sequences rep-seqs.qza
+cp denoising-stats.qza /home/users/alh1081/trimmed_fastqs
 
-qiime metadata tabulate --m-input-file denoising-stats.qza --o-visualization denoising-stats.qzv
+cp feature_table.qza /home/users/alh1081/trimmed_fastqs
 
-qiime feature-table tabulate-seqs --i-data rep-seqs.qza --o-visualization rep-seqs.qzv
+cp rep-seqs.qza /home/users/alh1081/trimmed_fastqs

@@ -33,5 +33,4 @@ qiime taxa barplot --i-table feature_table.qza --m-metadata-file metadata.tsv --
 
 qiime feature-table filter-samples --i-table feature_table.qza --m-metadata-file metadata.tsv --o-filtered-table new_samples_table.qza
 
-Bar Plot
 <img width="2048" alt="Screen Shot 2023-05-05 at 1 04 20 PM" src="https://user-images.githubusercontent.com/130762296/236558675-71ca3f0d-4af4-4dec-b228-e75e7e957ef6.png">

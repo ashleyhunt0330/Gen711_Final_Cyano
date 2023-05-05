@@ -30,3 +30,5 @@ qiime feature-classifier classify-sklearn --i-classifier /tmp/gen711_project_dat
 qiime taxa barplot --i-table /home/users/mm1853/trimmed_fastqs/feature_table.qza --i-taxonomy /home/users/mm1853/trimmed_fastqs/taxonomy.qza --o-visualization /home/users/mm1853/trimmed_fastqs/my-barplot.qzv
 
 qiime taxa barplot --i-table feature_table.qza --m-metadata-file metadata.tsv --i-taxonomy taxonomy.qza --o-visualization my-barplot.qzv
+
+qiime feature-table filter-samples --i-table feature_table.qza --m-metadata-file metadata.tsv --o-filtered-table new_samples_table.qza

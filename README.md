@@ -26,3 +26,5 @@ qiime metadata tabulate --m-input-file denoising-stats.qza --o-visualization den
 qiime feature-table tabulate-seqs --i-data rep-seqs.qza --o-visualization rep-seqs.qzv
 
 qiime feature-classifier classify-sklearn --i-classifier /tmp/gen711_project_data/cyano/classifier_16S_V4-V5.qza --i-reads /home/users/alh1081/trimmed_fastqs/rep-seqs.qza --o-classification /home/users/alh1081/trimmed_fastqs/taxonomy.qza
+
+qiime taxa barplot --i-table /home/users/mm1853/trimmed_fastqs/feature_table.qza --i-taxonomy /home/users/mm1853/trimmed_fastqs/taxonomy.qza --o-visualization /home/users/mm1853/trimmed_fastqs/my-barplot.qzv

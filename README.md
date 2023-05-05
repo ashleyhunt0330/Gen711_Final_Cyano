@@ -20,3 +20,7 @@ cp denoising-stats.qza /home/users/alh1081/trimmed_fastqs
 cp feature_table.qza /home/users/alh1081/trimmed_fastqs
 
 cp rep-seqs.qza /home/users/alh1081/trimmed_fastqs
+
+qiime metadata tabulate --m-input-file denoising-stats.qza --o-visualization denoising-stats.qzv
+
+qiime feature-table tabulate-seqs --i-data rep-seqs.qza --o-visualization rep-seqs.qzv

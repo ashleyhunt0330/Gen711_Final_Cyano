@@ -67,6 +67,8 @@ qiime feature-table filter-samples --i-table feature_table.qza --m-metadata-file
 
 # Analysis
 
+Each different colored bar on the chart shows a different species of bacteria. When looking at the data, one can see that during a cyanobacteria bloom many other species are no longer found in the water samples. A cyanobacteria bloom severely limits biodiversity in a body of water. In the first chart the data is organized by species found in each sample. It shows the process of the environment going from being a healthy and diverse ecosystem to a cyanobacteria bloom with little diversity. The second chart is organized by the dates of sample collection. This shows a cyclical pattern of more cyanobacteria growing in an area and the environment later recovering from the bloom. 
+
 # Sources
 
 Paul W. MacKeigan, Rebecca E. Garner, Marie-Ève Monchamp, David A. Walsh, Vera E. Onana, Susanne A. Kraemer, Frances R. Pick, Beatrix E. Beisner, Michael D. Agbeti, Naíla Barbosa da Costa, B. Jesse Shapiro, Irene Gregory-Eaves, Comparing microscopy and DNA metabarcoding techniques for identifying cyanobacteria assemblages across hundreds of lakes, Harmful Algae, Volume 113, 2022, 102187, ISSN 1568-9883, https://doi.org/10.1016/j.hal.2022.102187. (https://www.sciencedirect.com/science/article/pii/S1568988322000166)

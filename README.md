@@ -4,13 +4,15 @@ MacNeill Matthews & Ashley Hunt
 # Background
 
 Picocyanobacteria are photoautotrophs that are commonly found in olgiotrophic and mesotrophic waters, contributing significantly to oxygen productivity and nutrient cycling (Schallenberg et al, 2021). While much study of picocyanobacteria has focused on marine species, freshwater species have recently been studied for their variable community structure and differing horizontal-spacial niches based on trophic levels (Schallenberg et al, 2021).
+
 The production of cyanobacteria in aquatic ecosystems causes harm through the production of toxins secreted by the cyanobacteria (MacKeigan et al, 2022). The degradation of these blooms also causes a depletion in oxygen, leading to further ecosystem damage (MacKeigan et al, 2022). To properly study these blooms, it is crucial to identify the species involved for accurate bioassesment (MacKeigan et al, 2022).
+
 In this study, it was being examined whether large cyanobacteria or picocyanobacteria were responsible for causing poisonous toxins in algae blooms. This study targeted the eDNA of the bacteria to compare target bacteria, large cyanobacteria, and bloom forming cyanobacteria on the surface during a cyanobacteria bloom. This data was collected in fastq files.
 
 # Methods
 Unpacking and arranging of the data was performed on VScode. Here is our code for opening and arranging the data 
 
-FASTQ sample QA/QC-
+### FASTQ sample QA/QC-
 
 cp /tmp/gen711_project_data/fastp.sh <https://github.com/ashleyhunt0330/Gen711_Final_Cyano.git>/fastp.sh
 
@@ -28,7 +30,7 @@ qiime cutadapt trim-paired --i-demultiplexed-sequences output_trimmed.qza --p-co
 
 qiime demux summarize --i-data output_trimmed2.qza --o-visualization output_trimmed3
 
-Denoising-
+### Denoising-
 Note: Denoising step for cyanobacteria took over 2 hours, an thus we were unable to complete it during given time. Files were denoised by Hannah Pare, and copied to continue further steps. 
 
 cp denoising-stats.qza /home/users/alh1081/trimmed_fastqs
@@ -39,11 +41,11 @@ cp rep-seqs.qza /home/users/alh1081/trimmed_fastqs
 
 qiime metadata tabulate --m-input-file denoising-stats.qza --o-visualization denoising-stats.qzv
 
-Taxonomy assignment-
+### Taxonomy assignment-
 
 qiime feature-table tabulate-seqs --i-data rep-seqs.qza --o-visualization rep-seqs.qzv
 
-Classify rep seqs-
+### Classify rep seqs-
 
 qiime feature-classifier classify-sklearn --i-classifier /tmp/gen711_project_data/cyano/classifier_16S_V4-V5.qza --i-reads /home/users/alh1081/trimmed_fastqs/rep-seqs.qza --o-classification /home/users/alh1081/trimmed_fastqs/taxonomy.qza
 
@@ -51,7 +53,7 @@ qiime taxa barplot --i-table /home/users/mm1853/trimmed_fastqs/feature_table.qza
 
 qiime taxa barplot --i-table feature_table.qza --m-metadata-file metadata.tsv --i-taxonomy taxonomy.qza --o-visualization my-barplot.qzv
 
-Metadata and background info-
+### Metadata and background info-
 
 qiime feature-table filter-samples --i-table feature_table.qza --m-metadata-file metadata.tsv --o-filtered-table new_samples_table.qza
 

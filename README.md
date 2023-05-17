@@ -10,7 +10,7 @@ The production of cyanobacteria in aquatic ecosystems causes harm through the pr
 In this study, it was being examined whether large cyanobacteria or picocyanobacteria were responsible for causing poisonous toxins in algae blooms. This study targeted the eDNA of the bacteria to compare target bacteria, large cyanobacteria, and bloom forming cyanobacteria on the surface during a cyanobacteria bloom. This data was collected in fastq files.
 
 # Methods
-This study is comparing the 16s metabarcoding locus of the bacteria of a lake in bloom, as metabarcoding with eDNA is currently one of the foremost ways to assess aquatic diodiversity (MacKeigan et al, 2022). Unpacking and arranging of the data was performed on VScode. Here is our code for opening and arranging the data 
+This study is comparing the 16s metabarcoding locus of the bacteria of a lake in bloom, as metabarcoding with eDNA is currently one of the foremost ways to assess aquatic biodiversity (MacKeigan et al, 2022). Unpacking and arranging of the data was performed on VScode. Here is our code for opening and arranging the data 
 
 ### FASTQ sample QA/QC-
 
